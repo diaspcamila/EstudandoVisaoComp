@@ -20,6 +20,16 @@ cv2.imshow("soma", soma)
 subtracao = cv2.subtract(soma, Patrick)
 cv2.imshow("Soma s/ Patrick", subtracao)
 
+# mistura
+mistura = cv2.addWeighted(Bob, 0.5, Patrick, 1, 0)
+cv2.imshow("mistura", mistura)
+
+#multiplicaçao - nao mt usada
+multiplicacao = cv2.multiply(Patrick, Bob)
+cv2.imshow("multiplicacao", multiplicacao)
+
+# divisao - ajuste de contraste - vertificar se sao identicas - nao mt usada
+
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 

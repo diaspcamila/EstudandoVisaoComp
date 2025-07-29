@@ -21,10 +21,6 @@ _, imagemBinarizada = cv2.threshold(imagemGRAY, 0, 255, cv2.THRESH_BINARY_INV)
 cv2.imwrite("imagemBinarizada.png", imagemBinarizada)
 cv2.imshow("Binarizada", imagemBinarizada)
 
-# remoçao de ruido - desfoque
-imagemSemRuido = cv2.GaussianBlur(imagem, (5, 5), 0) # ou cv2.medianBlur()
-cv2.imshow("SemRuido", imagemSemRuido)
-
 # redimensionamento da imagem
 imagemRed = cv2.resize(imagem, (200, 200))
 cv2.imshow("Imagem Redimensionada", imagemRed)
